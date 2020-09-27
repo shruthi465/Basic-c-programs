@@ -1,0 +1,389 @@
+1.//fibonocci series
+#include <stdio.h>
+void main()
+{
+    int n,a=0,b=1,c;
+    printf("Enter the number of terms");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        printf("%d\t",a);
+        c=a+b;
+        a=b;
+        b=c;
+    }
+}
+
+output:
+Enter the number of terms5
+0	1	1	2	3
+
+
+2.//program to reverse the number
+#include <stdio.h>
+void main()
+{
+    int n,rev,sum=0;
+    printf("enter the number:");
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        rev=n%10;
+        sum=sum*10+rev;
+        n=n/10;
+ //printf("%d",rev);   
+    }
+ printf("%d",sum); 
+}
+
+output:
+
+enter the number:123456789
+987654321	
+
+3.//program to change the case of an alphabet
+#include <stdio.h>
+#include<ctype.h>
+void main()
+{
+   char alphabet; 
+   printf("Enter the aplhabet:");
+   scanf("%c",&alphabet);
+   if(islower(alphabet))
+   putchar(toupper(alphabet));
+   else
+   {
+       printf("%c",tolower(alphabet));
+   }
+}
+
+output:
+Enter the aplhabet:r
+R
+
+4.//program to reverse the string
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+  char s[100];
+  int length,i;
+  printf("enter the string:");
+  scanf("%s",s);
+  length=strlen(s);
+  for(i=length-1;i>=0;i--)
+  {
+      printf("%c",s[i]);
+  }
+
+}
+output:
+enter the string:asdfghjkl;
+;lkjhgfdsa
+
+5.//program to factorial of a first n number 
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+  int n,i,fact=1;
+  printf("Enter the n value:");
+  scanf("%d",&n);
+  for(i=1;i<=n;i++)
+  {
+      fact=fact*i;
+     printf("the factorial of %d : %d\n",i,fact); 
+  }
+
+}
+
+output:
+Enter the number:10
+the factorial of 1 : 1
+the factorial of 2 : 2
+the factorial of 3 : 6
+the factorial of 4 : 24
+the factorial of 5 : 120
+the factorial of 6 : 720
+the factorial of 7 : 5040
+the factorial of 8 : 40320
+the factorial of 9 : 362880
+the factorial of 10 : 3628800
+
+6.//program to find whether the aplhabet is a vowel or consonant 
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+  char letter;
+  printf("enter the alphabet :");
+  scanf("%c",&letter);
+  switch(letter)
+  {
+      case 'a':
+      case 'A':
+      case 'e':
+      case 'E':
+      case 'i':
+      case 'I':
+      case 'o':
+      case 'O':
+      case 'u':
+      case 'U':
+      printf("this  is the vowel ");
+      break;
+      default:
+        printf("this is a consonant");
+  }
+
+}
+
+Output:
+enter the alphabet :e
+this  is the vowel 
+
+enter the alphabet :d
+this  is a consonant 
+
+
+7.//program to find ASCII value 
+#include <stdio.h>
+void main()
+{
+    char c;
+    float f;
+    double d;
+    printf("Enter the character");
+    scanf("%c",&c);
+    printf("Enter the float");
+      scanf("%f",&f);
+    printf("Enter the double");
+      scanf("%lf",&d);
+    
+    printf("The ASCII value of %c=%d\n ",c,c);
+     printf("The ASCII value of %f=%d\n ",f,f);
+      printf("The ASCII value of %lf=%d\n ",d,d);
+}
+
+output:
+
+Enter the character:a
+Enter the float:1.2
+Enter the double:23
+The ASCII value of a=97
+ The ASCII value of 1.200000=783495264
+ The ASCII value of 23.000000=783495291
+ 
+8.//program to swap the two numbers with and without using the third variable 
+#include <stdio.h>
+void main()
+{
+    int x = 10, y = 15, temp;
+    printf("performing swapping by using a third variable\n");
+    temp = x;
+    x = y;
+    y = temp;
+    printf("x = %d and y = %d", x, y);
+    printf("\n performing swapping now without using third variable:");
+    x=x+y;
+    y=x-y;
+    x=x-y;
+    printf("After swapping\n");
+    printf("x=%d and y=%d",x,y);
+}
+
+output:
+performing swapping by using a third variable
+x = 15 and y = 10
+ performing swapping now without using third variable:After swapping
+x=10 and y=15
+
+9.//program to find a palindrome of a number
+#include<stdio.h>
+void main()
+{
+   int n,r,sum=0,temp;
+   printf("enter the number:");
+   scanf("%d",&n);
+   temp=n;
+   while(n!=0)
+   {
+       r=n%10;
+       sum=sum*10+r;
+       n=n/10;
+   }
+   n=temp;
+   if(sum==n)
+   {
+       printf("the given number %d is a palindrome",n);
+   }
+   else
+   {
+       printf("the given number %d is not a palindrome",n); 
+   }
+}
+
+output:
+enter the number:11
+the given number 11 is a palindrome
+enter the number:34567
+the given number 34567 is not a palindrome
+
+10.//program to find whether a string is a palindrome
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char a[100];
+    int l,i,flag;
+   printf("enter the string:");
+   scanf("%s",a);
+   l=strlen(a);
+   for(i=0;i<l;i++)
+   {
+       if(a[i]!=a[l-i-1])
+       {
+           flag=1;
+           break;
+       }
+   }
+   if(!flag)
+   {
+       printf("%s is  a palindrom",a);
+      
+   }
+   else
+   {
+      printf(" %s is not a palindrom",a);  
+   }
+   
+}
+
+output:
+enter the string:mam
+mam is  a palindrom
+
+enter the string:sdfghjkl
+ sdfghjkl is not a palindrom
+
+11.// program to add the digits of a number
+#include<stdio.h>
+void main()
+{
+    int n,r,sum=0;
+    printf("Enter the number that u want to add its digits:");
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        r=n%10;
+        sum=sum+r;
+        n=n/10;
+    }
+    printf("the sum of digits is %d",sum);
+}
+output:
+Enter the number that u want to add its digits:123456789
+the sum of digits is 45
+
+12.// c program to find the average of numbers
+#include <stdio.h>
+void main()
+{
+    int n,i;
+    float a,sum=0;;
+    printf("Enter the number of digits:");
+    scanf("%d",&n);
+    printf("Enter the numbers:\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%f",&a);
+        sum=sum+a;
+    }
+   printf("average=%f",(sum/n));
+}
+Output:
+
+Enter the number of digits:3
+Enter the numbers:
+1
+2
+2
+average=1.666667
+
+13.//program to find whether the number is armstrong number or not
+#include <stdio.h>
+void main()
+{
+    int n,r,sum=0,temp;
+    printf("Enter the number of digits:");
+    scanf("%d",&n);
+        temp=n;
+    while(n>0)
+    {
+       r=n%10; 
+        sum=sum+r*r*r;
+        n/=10;
+    }
+    n=temp;
+    if(sum==n)
+    {
+        printf("the given number %d is a armstrong number",n);
+    }
+    else
+    {
+      printf("the given number %d is not a armstrong number",n);  
+    }
+}
+
+Output:
+Enter the number of digits:345
+the given number 345 is not a armstrong number
+
+Enter the number of digits:153
+the given number 153 is a armstrong number
+   
+14.//c program to find even and odd numbers
+#include <stdio.h>
+void main()
+{
+    int n;
+    printf("enter n value:");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+    {
+    if (i%2==0)
+    {
+    printf("\n%d is an even number",i);
+    }
+    else
+    {
+    printf("\n%d is not an even number",i);
+}
+    }
+    }
+
+output:
+enter n value:3
+0 is an even number
+1 is not an even number
+2 is an even number
+
+15//c program to find factors of a number
+#include <stdio.h>
+void main()
+{
+    int n,i;
+    printf("enter the n value:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        printf("\n%d is factor of %d",i,n);
+    }
+}
+Output:
+enter the n value:6
+1 is factor of 6
+2 is factor of 6
+3 is factor of 6
+6 is factor of 6
