@@ -17,7 +17,7 @@ void main()
 output:
 Enter the number of terms5
 0	1	1	2	3
-
+------------------------------------------------------------------------------------------
 
 2.//program to reverse the number
 #include <stdio.h>
@@ -40,7 +40,7 @@ output:
 
 enter the number:123456789
 987654321	
-
+--------------------------------------------------------------------------------------------
 3.//program to change the case of an alphabet
 #include <stdio.h>
 #include<ctype.h>
@@ -60,7 +60,7 @@ void main()
 output:
 Enter the aplhabet:r
 R
-
+---------------------------------------------------------------------------------------------
 4.//program to reverse the string
 #include <stdio.h>
 #include<string.h>
@@ -80,7 +80,7 @@ void main()
 output:
 enter the string:asdfghjkl;
 ;lkjhgfdsa
-
+-------------------------------------------------------------------------------------------------
 5.//program to factorial of a first n number 
 #include <stdio.h>
 #include<string.h>
@@ -109,7 +109,7 @@ the factorial of 7 : 5040
 the factorial of 8 : 40320
 the factorial of 9 : 362880
 the factorial of 10 : 3628800
-
+-----------------------------------------------------------------------------------------
 6.//program to find whether the aplhabet is a vowel or consonant 
 #include <stdio.h>
 #include<string.h>
@@ -144,7 +144,7 @@ this  is the vowel
 
 enter the alphabet :d
 this  is a consonant 
-
+-----------------------------------------------------------------------------------------------------
 
 7.//program to find ASCII value 
 #include <stdio.h>
@@ -173,7 +173,7 @@ Enter the double:23
 The ASCII value of a=97
  The ASCII value of 1.200000=783495264
  The ASCII value of 23.000000=783495291
- 
+ -----------------------------------------------------------------------------------------------------------
 8.//program to swap the two numbers with and without using the third variable 
 #include <stdio.h>
 void main()
@@ -197,7 +197,7 @@ performing swapping by using a third variable
 x = 15 and y = 10
  performing swapping now without using third variable:After swapping
 x=10 and y=15
-
+-----------------------------------------------------------------------------------------------------------------
 9.//program to find a palindrome of a number
 #include<stdio.h>
 void main()
@@ -228,7 +228,7 @@ enter the number:11
 the given number 11 is a palindrome
 enter the number:34567
 the given number 34567 is not a palindrome
-
+--------------------------------------------------------------------------------------------------------------
 10.//program to find whether a string is a palindrome
 #include<stdio.h>
 #include<string.h>
@@ -265,7 +265,7 @@ mam is  a palindrom
 
 enter the string:sdfghjkl
  sdfghjkl is not a palindrom
-
+-------------------------------------------------------------------------------------------------------------------
 11.// program to add the digits of a number
 #include<stdio.h>
 void main()
@@ -284,7 +284,7 @@ void main()
 output:
 Enter the number that u want to add its digits:123456789
 the sum of digits is 45
-
+-------------------------------------------------------------------------------------------------------------
 12.// c program to find the average of numbers
 #include <stdio.h>
 void main()
@@ -309,7 +309,7 @@ Enter the numbers:
 2
 2
 average=1.666667
-
+---------------------------------------------------------------------------------------------------------------------
 13.//program to find whether the number is armstrong number or not
 #include <stdio.h>
 void main()
@@ -341,7 +341,7 @@ the given number 345 is not a armstrong number
 
 Enter the number of digits:153
 the given number 153 is a armstrong number
-   
+ -----------------------------------------------------------------------------------------------------------------  
 14.//c program to find even and odd numbers
 #include <stdio.h>
 void main()
@@ -367,7 +367,7 @@ enter n value:3
 0 is an even number
 1 is not an even number
 2 is an even number
-
+-------------------------------------------------------------------------------------------------------------
 15//c program to find factors of a number
 #include <stdio.h>
 void main()
