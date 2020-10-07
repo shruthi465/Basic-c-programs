@@ -387,6 +387,7 @@ enter the n value:6
 2 is factor of 6
 3 is factor of 6
 6 is factor of 6
+-------------------------------------------------------------------------------------------------------------------------------------
 16.//c program to find sum of given n numbers
 #include <stdio.h>
 void main()
