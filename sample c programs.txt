@@ -387,3 +387,52 @@ enter the n value:6
 2 is factor of 6
 3 is factor of 6
 6 is factor of 6
+16.//c program to find sum of given n numbers
+#include <stdio.h>
+void main()
+{
+    int n,values,sum=0,i;
+    printf("enter the n value:");
+    scanf("%d",&n);
+    printf("Enter the values");
+    for(i=1;i<=n;i++)
+    {
+      scanf("%d",&values);
+      sum=sum+values;
+    }
+        printf(" the sum of n is : %d",sum);
+}
+output:
+enter the n value:3
+Enter the values:2
+3
+2
+ the sum of n is : 7
+........................................................................................
+17.//c program to find a number is prime or not
+#include<stdio.h>
+void main()
+{
+   int n,i,count=0;
+   printf("Enter the n value:");
+   scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+       if(n%i==0)
+       {
+           count++;
+       }
+   }
+   if(count==2)
+   {
+       printf("The number is a prime");
+   }
+   else
+   printf("not a prime number");
+}
+output:
+Enter the n value:5
+The number is a prime
+
+Enter the n value:100
+not a prime number
