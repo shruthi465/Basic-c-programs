@@ -489,4 +489,23 @@ output:
 Enter the n value:6
 6 is a perfect number
 ..............................................................................................
+20.c program to find factors of a number
+#include <stdio.h>
+void main()
+{
+    int n,i=1;
+    printf("Enter the n value:");
+    scanf("%d",&n);
+    printf("The factor of %d are:\n",n);
+    while(i<n)
+    {
+        if(n%i==0)
+    printf("%d\t",i);
+    i++;
+    }
+}
+output:
+Enter the n value:24
+The factor of 24 are:
+1	2	3	4	6	8	12	
 
