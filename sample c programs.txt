@@ -463,4 +463,30 @@ void main()
 output:
 Enter the n value:20
 the prime numbers are:	2	3	5	7	11	13	17	19
-...................................................................................
+................................................................................................
+19.c program to find the given number is perfect number or not
+#include <stdio.h>
+void main()
+{
+    int n,i,count=0;
+    printf("Enter the n value:");
+    scanf("%d",&n);
+    i=1;
+    while(i<n)
+    {
+        if(n%i==0)
+        count=count+i;
+        i++;
+    }
+    if(count==n)
+    {
+       printf("%d is a perfect number",n);
+    }
+    else
+    printf("it is not a perfect number");
+}
+output:
+Enter the n value:6
+6 is a perfect number
+..............................................................................................
+
