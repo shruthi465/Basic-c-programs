@@ -527,5 +527,8 @@ void main()
 output:
 Enter the n value:2020
 2020 year is a leap year
+
+Enter the n value:2013
+it is not a leap year
 ...........................................................................................................
 
