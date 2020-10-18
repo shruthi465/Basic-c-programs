@@ -508,4 +508,24 @@ output:
 Enter the n value:24
 The factor of 24 are:
 1	2	3	4	6	8	12	
+..................................................................................................
+21.c program to find the given year i s a leap year or not
+#include <stdio.h>
+void main()
+{
+    int n;
+    printf("Enter the n value:");
+    scanf("%d",&n);
+    if(((n%4==0)&&(n%100!=0))||(n%400==0))
+    {
+        printf("\n%d year is a leap year",n);
+    }
+    else
+    printf("%d year is not a leap year");
+
+}
+output:
+Enter the n value:2020
+2020 year is a leap year
+...........................................................................................................
 
